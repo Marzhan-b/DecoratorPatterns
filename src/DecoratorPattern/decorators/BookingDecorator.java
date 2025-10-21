@@ -1,4 +1,4 @@
-package DecoratorPattern;
+package DecoratorPattern.decorators;
 
 import DecoratorPattern.IBooking;
 

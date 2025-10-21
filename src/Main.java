@@ -1,4 +1,7 @@
 import DecoratorPattern.*;
+import DecoratorPattern.decorators.BreakfastDecorator;
+import DecoratorPattern.decorators.SeaViewDecorator;
+import DecoratorPattern.decorators.VIPServiceDecorator;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,6 +18,10 @@ public class Main {
 
         IBooking vip = new VIPServiceDecorator(seaView, 100.0);
         show(vip);
+
+
+
+
     }
 
     private static void show(IBooking booking) {

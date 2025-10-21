@@ -1,6 +1,8 @@
-package DecoratorPattern;
+package DecoratorPattern.decorators;
 
-public abstract class RoomDecorator implements IBooking {
+import DecoratorPattern.IBooking;
+
+public class RoomDecorator implements IBooking {
     protected IBooking booking;
 
     public RoomDecorator(IBooking booking) {
