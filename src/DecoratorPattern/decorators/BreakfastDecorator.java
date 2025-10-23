@@ -3,9 +3,9 @@ package DecoratorPattern.decorators;
 import DecoratorPattern.IBooking;
 
 public class BreakfastDecorator extends RoomDecorator {
-    private double breakfastCost;
+    private float breakfastCost;
 
-    public BreakfastDecorator(IBooking booking, double breakfastCost) {
+    public BreakfastDecorator(IBooking booking, float breakfastCost) {
         super(booking);
         this.breakfastCost = breakfastCost;
     }
@@ -16,7 +16,7 @@ public class BreakfastDecorator extends RoomDecorator {
     }
 
     @Override
-    public double getPrice() {
+    public float getPrice() {
         return booking.getPrice() + breakfastCost;
     }
 }

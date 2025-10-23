@@ -23,7 +23,7 @@ public abstract class BookingDecorator implements IBooking {
     }
 
     @Override
-    public double getPrice() {
+    public float getPrice() {
         return booking.getPrice();
     }
 }

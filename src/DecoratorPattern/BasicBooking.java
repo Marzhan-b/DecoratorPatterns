@@ -1,9 +1,9 @@
 package DecoratorPattern;
 public class BasicBooking implements IBooking {
     private String bookingName;
-    private double basePrice;
+    private float basePrice;
 
-    public BasicBooking(String bookingName, double basePrice) {
+    public BasicBooking(String bookingName, float basePrice) {
         this.bookingName = bookingName;
         this.basePrice = basePrice;
     }
@@ -14,7 +14,7 @@ public class BasicBooking implements IBooking {
     }
 
     @Override
-    public double getPrice() {
+    public float getPrice() {
         return basePrice;
     }
 
@@ -26,11 +26,11 @@ public class BasicBooking implements IBooking {
         this.bookingName = bookingName;
     }
 
-    public double getBasePrice() {
+    public float getBasePrice() {
         return basePrice;
     }
 
-    public void setBasePrice(double basePrice) {
+    public void setBasePrice(float basePrice) {
         this.basePrice = basePrice;
     }
 }

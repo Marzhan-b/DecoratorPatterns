@@ -3,9 +3,9 @@ package DecoratorPattern.decorators;
 import DecoratorPattern.IBooking;
 
 public class VIPServiceDecorator extends RoomDecorator {
-    private double vipCost;
+    private float vipCost;
 
-    public VIPServiceDecorator(IBooking booking, double vipCost) {
+    public VIPServiceDecorator(IBooking booking, float vipCost) {
         super(booking);
         this.vipCost = vipCost;
     }
@@ -16,7 +16,7 @@ public class VIPServiceDecorator extends RoomDecorator {
     }
 
     @Override
-    public double getPrice() {
+    public float getPrice() {
         return booking.getPrice() + vipCost;
     }
 }
